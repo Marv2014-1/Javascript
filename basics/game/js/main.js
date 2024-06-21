@@ -9,7 +9,9 @@ if (!playGame) {
         // Early exit if userChoice is falsy
         return;
     }
+
     let playerChoice = userChoice.trim().toLowerCase();
+
     if (
         playerChoice !== "rock" &&
         playerChoice !== "paper" &&
@@ -19,9 +21,11 @@ if (!playGame) {
         // Early exit if playerChoice is not one of the options
         return;
     }
+
     let computerChoice = Math.floor(Math.random() * 3);
     let computerText = ["rock", "paper", "scissors"][computerChoice];
     alert("The computer chose " + computerText);
+
     if (playerChoice === computerText) {
         alert("It's a tie!");
     } else if (
