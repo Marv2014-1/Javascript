@@ -44,14 +44,14 @@ console.log(isNaN('apple')); // true
 // math object
 console.log(Math.PI); // 3.141592653589793
 console.log(Math.E); // 2.718281828459045
-console.log(Math.trunc(4.7)); // 4 removes the decimal part
-console.log(Math.round(4.7)); // 5 rounds to the nearest integer
-console.log(Math.pow(8, 2)); // 64 (8^2)
-console.log(Math.sqrt(64)); // 8 (square root of 64)
-console.log(Math.abs(-4.7)); // 4.7 absolute value
-console.log(Math.ceil(4.4)); // 5 rounds up
-console.log(Math.floor(4.7)); // 4 rounds down
-console.log(Math.min(0, 150, 30, 20, -8, -200)); // -200 
+console.log(Math.trunc(4.7)); // 4
+console.log(Math.round(4.7)); // 5
+console.log(Math.pow(8, 2)); // 64
+console.log(Math.sqrt(64)); // 8
+console.log(Math.abs(-4.7)); // 4.7
+console.log(Math.ceil(4.4)); // 5
+console.log(Math.floor(4.7)); // 4
+console.log(Math.min(0, 150, 30, 20, -8, -200)); // -200
 console.log(Math.max(0, 150, 30, 20, -8, -200)); // 150
 console.log(Math.random()); // random number between 0 and 1
 console.log(Math.floor(Math.random() * 11)); // random number between 0 and 10
