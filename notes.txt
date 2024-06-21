@@ -1,0 +1,2 @@
+Run a live server at the bottem right, this will lunch a web page
+using the localhost at port 5500
