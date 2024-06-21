@@ -54,5 +54,8 @@ const greeter4 = {
     message: "say hi",
     times: 4
 }
-// greeter.message = "This greeter can be changed because it is an object";
+
+// this works because the object is constant, but the properties are not
+// we are not changing the pointer of the object, but the properties of the object
+greeter.message = "This greeter can be changed because it is an object";
 console.log(greeter4.message);
