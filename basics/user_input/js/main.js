@@ -9,4 +9,4 @@ console.log(userResult);
 
 // prompt prompts the user with a message and returns the user input
 var userInput = prompt("What is your name?");
-console.log(userInput);
+console.log(userInput ?? "Empty prompt entered");
