@@ -1,6 +1,5 @@
 // var, let, const
 
-
 // traditional way of declaring variables
 var greeter = "hey hi";
 
@@ -17,11 +16,14 @@ myFunction();
 
 //doesn't work because hello is a local variable to the function above
 try {
-    console.log(hello + " Local");   
+    console.log(hello + " Local");
 } catch (error) {
-    console.log("Error: " + error + " because hello is a local variable to the function above");
+    console.log(
+        "Error: " +
+            error +
+            " because hello is a local variable to the function above"
+    );
 }
-
 
 // new way of declaring variables
 
@@ -52,8 +54,8 @@ try {
 //const with objects is special
 const greeter4 = {
     message: "say hi",
-    times: 4
-}
+    times: 4,
+};
 
 // this works because the object is constant, but the properties are not
 // we are not changing the pointer of the object, but the properties of the object
