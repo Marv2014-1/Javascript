@@ -214,3 +214,42 @@ math1.hello(); // this works
 //math1.add(2, 3); // error - add is not a method of math1
 
 // #endregion this also override the Math object
+
+// #region public, private, protected - access modifiers
+// public - accessible from anywhere
+// private - accessible only within the class
+// protected - accessible within the class and subclasses
+
+class Person2 {
+    name; // public
+    #age; // private
+    _id; // protected
+    constructor(name, age, id) {
+        this.name = name;
+        this.#age = age;
+        this._id = id;
+        this.#privateMethod();
+    }
+
+    // private method
+    #privateMethod() {
+        console.log("I am a private method");
+    }
+
+    // public method
+    publicMethod() {
+        console.log("I am a public method");
+    }
+
+    // protected method
+    _protectedMethod() {
+        console.log("I am a protected method");
+    }
+}
+
+const person2 = new Person2("John", 25, 123);
+person2.publicMethod();
+// person2.#privateMethod(); // error - private method
+person2._protectedMethod(); // will not throw an error but the _ is a convention to show that it is protected
+
+// #endregion
