@@ -87,3 +87,16 @@ myCarMake = "Toyota";
 // this does not change the value of the object
 
 console.log(newCar); // {make: "Chevy", model: "Cruze", year: 2015, doors: 4}
+
+const band = {
+    name: "Metallica",
+    genre: "Metal", // default value for genre
+    members: 4,
+};
+
+// destructuring object with function parameter and default value for genre
+function getGenre({genre}) {
+    return genre;
+}
+
+console.log(getGenre(band)); // Metal
