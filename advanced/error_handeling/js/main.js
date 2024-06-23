@@ -11,6 +11,8 @@ const makeError = () => {
         name = "John";
     } catch (error) {
         console.error(error);
+    } finally {
+        console.log("This will always run");
     }
 };
 
