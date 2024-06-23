@@ -1,4 +1,4 @@
-// DOM - Document Object Model
+// DOM - Document Object Model. The DOM refers to the document object model, which is a representation of the structure of a document. The DOM is used to interact with the HTML and CSS of a webpage. The DOM is a programming interface for web documents. It represents the structure of a document as a tree of objects. The DOM is used to interact with the HTML and CSS of a webpage. The DOM is a programming interface for web documents. It represents the structure of a document as a tree of objects.
 
 // #region selecting elements and changing their style
 const view1 = document.getElementById("view1"); // getElementById is used to select the element with the specified ID
